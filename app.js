@@ -30,7 +30,7 @@ app.use(session({
 // app.use(passport.initialize());
 // app.use(passport.session());
 
-mongoose.connect("mongodb://localhost:27017/userDB");
+mongoose.connect("mongodb+srv://admin:nUR7W3CttHeQjJzD@cluster0.edolsg4.mongodb.net/?retryWrites=true&w=majority/secretsDB");
 
 
 
