@@ -12,6 +12,7 @@ const FacebookStrategy = require('passport-facebook').Strategy;
 const findOrCreate = require('mongoose-findorcreate');
 
 const app = express();
+const uri = process.env.MONGODB_URI;
 
 // console.log(process.env.API_KEY);
 
@@ -30,7 +31,7 @@ app.use(session({
 // app.use(passport.initialize());
 // app.use(passport.session());
 
-mongoose.connect("mongodb+srv://admin:nUR7W3CttHeQjJzD@cluster0.edolsg4.mongodb.net/?retryWrites=true&w=majority/secretsDB");
+mongoose.connect("mongodb+srv://admin:nUR7W3CttHeQjJzD@cluster0.edolsg4.mongodb.net/?retryWrites=true&w=majority");
 
 
 
